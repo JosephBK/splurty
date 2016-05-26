@@ -1,0 +1,9 @@
+<div class="col-xs-10 col-xs-offset-1">
+  <h1>Authors that said yes</h1>
+</div>
+
+<% @quote.each do |x|%>
+<% if x.saying == "yes" %>
+  <h1> <%= x.id %> : <%= x.author %> </h1>
+<% end %>
+<% end %>

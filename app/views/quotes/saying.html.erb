@@ -1,0 +1,8 @@
+<div class="col-xs-10 col-xs-offset-1">
+  <h1>Sayings</h1>
+</div>
+<% @quote.each do |x|%>
+  <h1> <%= x.id %> : <%= x.saying %> </h1>
+<% end %>
+
+

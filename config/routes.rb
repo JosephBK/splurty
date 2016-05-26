@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 root 'quotes#index'
 resources :quotes
 get 'about', to: 'quotes#about'
+get 'saying', to: 'quotes#saying'
+get 'author', to: 'quotes#author'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

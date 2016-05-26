@@ -16,7 +16,12 @@ class QuotesController < ApplicationController
   def about
     
   end
-
+  def saying
+    @quote = Quote.select{ |index| index.to_s }
+  end 
+  def author
+     @quote = Quote.select{|index| index}
+   end 
   private
 
   def quote_params
