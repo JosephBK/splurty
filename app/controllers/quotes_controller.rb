@@ -17,11 +17,13 @@ class QuotesController < ApplicationController
     
   end
   def saying
-    @quote = Quote.select{ |index| index.to_s }
+    @quote = Quote.select{|quote| quote.saying}
   end 
   def author
-     @quote = Quote.select{|index| index}
-   end 
+    @quote = Quote.select do |quote| 
+      quote.saying[0..2] == "yes"
+    end 
+  end
   private
 
   def quote_params

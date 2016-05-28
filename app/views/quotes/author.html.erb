@@ -3,7 +3,5 @@
 </div>
 
 <% @quote.each do |x|%>
-<% if x.saying == "yes" %>
-  <h1> <%= x.id %> : <%= x.author %> </h1>
-<% end %>
+  <h1><%= x.author %> </h1>
 <% end %>
