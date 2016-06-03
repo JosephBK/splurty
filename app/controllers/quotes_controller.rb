@@ -3,9 +3,6 @@ class QuotesController < ApplicationController
     @quote = Quote.order("RANDOM()").first
   end
 
-  def new  
-    @quote = Quote.new  
-  end
   def create
     @quote = Quote.create(quote_params)
     if @quote.invalid?
@@ -13,17 +10,21 @@ class QuotesController < ApplicationController
     end
     redirect_to root_path    
   end
+
   def about
     
   end
+
   def saying
     @quote = Quote.select{|quote| quote.saying}
-  end 
+  end
+
   def author
     @quote = Quote.select do |quote| 
       quote.saying[0..2] == "yes"
     end 
   end
+  
   private
 
   def quote_params
