@@ -1,11 +1,17 @@
-<h2>
-  <span>SPLURTY / No. <%= @quote.id %></span>
-  Here's the <u>best unsolicited advice</u> you can get!
-</h2>
-<h1><%= @quote.saying %></h1>
-<h2 class="pull-right">- <%= @quote.author %></h2>
+<%if @quote.nil?%>
+  <h2>
+    Your <u>Quote</u> will appear here!
+  </h2>
+<%else%>  
+  <h2>
+    <span>SPLURTY / No. <%= @quote.id %></span>
+    Here's the <u>best unsolicited fitness advice</u> you can get!
+  </h2>
+  <h1><%= @quote.saying %></h1>
+  <h2 class="pull-right">- <%= @quote.author %></h2>
 
-<br class="clear" />
-<br />
-<br />
-<br />
+  <br class="clear" />
+  <br />
+  <br />
+  <br />
+<% end %>

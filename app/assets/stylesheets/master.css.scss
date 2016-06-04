@@ -1,5 +1,5 @@
 
-
+$headings-font-family: 'alex_brushregular', serif;
 .clear {
   clear:both;
 }
@@ -51,13 +51,8 @@ hr {
 }
 
 h1 {
-  font-family: 'alex_brushregular', serif;
   font-weight:bold;
   font-size:48px;
-}
-
-h2 {
-  font-family: 'alex_brushregular', sans-serif;
 }
 
 .next-quote {
@@ -94,7 +89,6 @@ h2 {
 
 h2 span {
   color: #dddddd;
-  font-family: 'Roboto Slab', serif;
 }
 
 ::selection {
