@@ -1,5 +1,5 @@
-<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
-$headings-font-family: 'Shadows Into Light', cursive;
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+$headings-font-family:'Indie Flower', cursive;
 .clear {
   clear:both;
 }
@@ -38,7 +38,7 @@ $headings-font-family: 'Shadows Into Light', cursive;
   color:black;
   font-size: 25px;
   border-bottom: 1px solid #dfdfdf;
-  font-family: 'Shadows Into Light', cursive;
+  font-family: 'Indie Flower', cursive;
   font-weight:bold;
 }
 
@@ -57,8 +57,7 @@ h1 {
 
 .next-quote {
   color:#f84342;
-  font-family: 'Roboto Slab', serif;
-  font-size:20px;
+  font-family: 'Indie Flower', cursive;
 }
 
 .footer-blurb{
@@ -84,7 +83,7 @@ h1 {
 }
 
 .modal {
-  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+font-family: 'Indie Flower', cursive;
 }
 
 h2 span {
