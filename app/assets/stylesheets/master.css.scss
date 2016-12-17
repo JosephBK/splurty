@@ -38,7 +38,7 @@ $headings-font-family:'Indie Flower', cursive;
   color:black;
   font-size: 25px;
   border-bottom: 1px solid #dfdfdf;
-  font-family: 'Indie Flower', cursive;
+  font-family: $headings-font-family;
   font-weight:bold;
 }
 
@@ -57,7 +57,7 @@ h1 {
 
 .next-quote {
   color:#f84342;
-  font-family: 'Indie Flower', cursive;
+  font-family: $headings-font-family;
 }
 
 .footer-blurb{
@@ -83,7 +83,7 @@ h1 {
 }
 
 .modal {
-font-family: 'Indie Flower', cursive;
+font-family: $headings-font-family
 }
 
 h2 span {
@@ -92,4 +92,8 @@ h2 span {
 
 ::selection {
   background-color: #f84342;
+}
+li{
+  font-family: $headings-font-family;
+  font-size:24px;
 }

@@ -18,13 +18,11 @@ class QuotesController < ApplicationController
   end
 
   def saying
-    @quote = Quote.select{|quote| quote.saying}
+    @quotes = Quote.all
   end
 
   def author
-    @quote = Quote.select do |quote| 
-      quote.saying[0..2] == "yes"
-    end 
+    @quote = Quote.starting_with_yes
   end
   
   private
